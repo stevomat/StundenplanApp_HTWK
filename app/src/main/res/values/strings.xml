@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">HTWK</string>
+
+    <string-array name="sg_array">
+        <item>eingeben oder auswählen</item>
+        <item>21INM</item>
+        <item>20INM</item>
+    </string-array>
+
+    <string-array name="plwocheWS_array">
+        <item>Aktuelle Woche</item>
+        <item>Alle Wochen </item>
+        <item>35. PW</item>
+        <item>36. PW</item>
+        <item>37. PW</item>
+        <item>38. PW</item>
+        <item>39. PW</item>
+        <item>40. PW</item>
+        <item>41. PW</item>
+        <item>42. PW</item>
+        <item>43. PW</item>
+        <item>44. PW</item>
+        <item>45. PW</item>
+        <item>46. PW</item>
+        <item>47. PW</item>
+        <item>48. PW</item>
+        <item>49. PW</item>
+        <item>50. PW</item>
+        <item>51. PW</item>
+        <item>52. PW</item>
+        <item>53. PW</item>
+        <item>54. PW</item>
+        <item>55. PW</item>
+        <item>56. PW</item>
+        <item>57. PW</item>
+        <item>58. PW</item>
+        <item>59. PW</item>
+        <item>60. PW</item>
+        <item>61. PW</item>
+    </string-array>
+
+    <string-array name="semester_array">
+        <item>Wintersemester</item>
+        <item>Sommersemester</item>
+    </string-array>
+
+    <string-array name="plwocheSS_array">
+        <item>Aktuelle Woche</item>
+        <item>Alle Wochen </item>
+        <item>11. PW</item>
+        <item>12. PW</item>
+        <item>13. PW</item>
+        <item>14. PW</item>
+        <item>15. PW</item>
+        <item>16. PW</item>
+        <item>17. PW</item>
+        <item>18. PW</item>
+        <item>19. PW</item>
+        <item>20. PW</item>
+        <item>21. PW</item>
+        <item>22. PW</item>
+        <item>23. PW</item>
+        <item>24. PW</item>
+        <item>25. PW</item>
+        <item>26. PW</item>
+        <item>27. PW</item>
+        <item>28. PW</item>
+        <item>29. PW</item>
+        <item>30. PW</item>
+        <item>31. PW</item>
+        <item>32. PW</item>
+        <item>33. PW</item>
+        <item>34. PW</item>
+        <item>35. PW</item>
+    </string-array>
+
+    <string-array name="wochentage_array">
+        <item>Montag</item>
+        <item>Dienstag</item>
+        <item>Mittwoch</item>
+        <item>Donnerstag</item>
+        <item>Freitag</item>
+        <item>Samstag</item>
+        <item>Sonntag</item>
+    </string-array>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
