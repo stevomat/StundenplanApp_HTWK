@@ -2,11 +2,14 @@ package com.viellandsteve.htwk
 
 import android.content.Context
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toast.makeText
 import kotlinx.android.synthetic.main.row_stp.view.*
 
 class CostumAdapter(context: Context, rowcounter: Int, index_wochentag: Int, list_Montag: MutableList<Array<String>>, list_Dienstag: MutableList<Array<String>>, list_Mittwoch: MutableList<Array<String>>, list_Donnerstag: MutableList<Array<String>>, list_Freitag: MutableList<Array<String>>, list_Samstag: MutableList<Array<String>>, list_Sonntag: MutableList<Array<String>>) : BaseAdapter() {
@@ -15,6 +18,7 @@ class CostumAdapter(context: Context, rowcounter: Int, index_wochentag: Int, lis
     private val mContext : Context
 
     var rowcount = 0
+    var bemerkungen = ""
     val index_wt = index_wochentag
     val list_mt : MutableList<Array<String>> = list_Montag
     val list_dt : MutableList<Array<String>> = list_Dienstag
@@ -75,7 +79,52 @@ class CostumAdapter(context: Context, rowcounter: Int, index_wochentag: Int, lis
     }
 
     override fun getItem(p0: Int): Any {
-        return "TEST STRING"
+        if (index_wt == 0) { // Montag
+            if (!list_mt.isNullOrEmpty()) {
+                bemerkungen = list_mt.get(0)[7]
+            }
+        }
+        if (index_wt == 1) { // Dienstag
+            if (!list_dt.isNullOrEmpty()) {
+                bemerkungen = list_dt.get(0)[7]
+            }
+        }
+        if (index_wt == 2) { // Mittwoch
+            if (!list_mit.isNullOrEmpty()) {
+                bemerkungen = list_mit.get(0)[7]
+            }
+        }
+
+        if (index_wt == 3) { // Donnerstag
+            if (!list_don.isNullOrEmpty()) {
+                bemerkungen = list_don.get(0)[7]
+            }
+        }
+
+        if (index_wt == 4) { // Freitag
+            if (!list_ft.isNullOrEmpty()) {
+                bemerkungen = list_ft.get(0)[7]
+            }
+        }
+        if (index_wt == 5) { // Samstag
+            if (!list_sa.isNullOrEmpty()) {
+                bemerkungen = list_sa.get(0)[7]
+            }
+        }
+        if (index_wt ==6) { // Sonntag
+            if (!list_so.isNullOrEmpty()) {
+                bemerkungen = list_so.get(0)[7]
+            }
+        }
+
+        if (bemerkungen.equals("")) {
+            bemerkungen = "Keine Bemerkungen"
+        }
+
+        val toast = Toast.makeText(mContext, bemerkungen + " ", Toast.LENGTH_LONG)
+        toast.setGravity(Gravity.CENTER_VERTICAL,0,0)
+
+        return toast.show()
     }
 
     // render für jede Zeile

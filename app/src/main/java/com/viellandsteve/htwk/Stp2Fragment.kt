@@ -64,8 +64,6 @@ class Stp2Fragment : Fragment(R.layout.fragment_stp2) {
         val pwsplit = split?.get(1)?.split(".")
         PW = (pwsplit?.get(0) ?: String) as String
 
-        Log.i(TAG, "Fragment B: " + displayMessage)
-
         return view
 
     }
@@ -97,12 +95,15 @@ class Stp2Fragment : Fragment(R.layout.fragment_stp2) {
 
 
 
-
-
         URLstp = constructUrl(SG,PW,semester)
         retrieveWebInfo(URLstp)
 
         val listView = view.findViewById<ListView>(R.id.listview_stp)
+
+        listView.setOnItemClickListener { adapterView, view, i, l ->
+            val element = adapterView.getItemAtPosition(i)
+            Log.i(TAG, "element: " + element)
+        }
 
         listen.observe(this, Observer {
             listView.adapter = CostumAdapter(requireContext(), rowcounter, index_wochentag, list_montag, list_dienstag, list_mittwoch, list_donnerstag, list_freitag, list_samstag, list_sonntag)
@@ -178,7 +179,7 @@ class Stp2Fragment : Fragment(R.layout.fragment_stp2) {
                                 array_montag[8] = rowcounter.toString()
                                 list_montag.add(array_montag)
 
-                                Log.i(TAG, "rows Montag: " + list_montag.get(0)[0]) // !!
+                                Log.i(TAG, "rows Montag: " + list_montag.get(0)[7]) // !!
                             }
                             // Dienstag
                             if (i == 1) {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HTWK</string>
+    <string name="app_name">HTWK-Leipzig</string>
 
     <string-array name="sg_array">
         <item>eingeben oder auswählen</item>
