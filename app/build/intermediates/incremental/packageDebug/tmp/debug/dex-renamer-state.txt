@@ -1,4 +1,4 @@
-#Sat Sep 18 13:18:47 CEST 2021
+#Sat Sep 18 13:24:25 CEST 2021
 base.2=D\:\\AndroidStudioProjects\\HTWK\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
 path.2=5/classes.dex
 base.1=D\:\\AndroidStudioProjects\\HTWK\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

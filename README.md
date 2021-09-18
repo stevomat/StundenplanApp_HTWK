@@ -1,4 +1,4 @@
-# Stundenplan-App der HTWK v1.0.0
+# Stundenplan-App der HTWK v1.0.2
 
 Die Langeweile in den Semesterferien (~pause) kann einen schon überstürzen, weswegen ich eine Stundenplan-App für Android-Geräte (später eventuell iOS) umgesetzt habe. 
 Die App basiert auf der [Stundenplan-Anzeige](https://www.htwk-leipzig.de/studieren/im-studium/online-services/lehrveranstaltungsplan/seminargruppenplan/) bzw. dem [Seminargruppenplan]((https://www.htwk-leipzig.de/studieren/im-studium/online-services/lehrveranstaltungsplan/seminargruppenplan/)) der HTWK.

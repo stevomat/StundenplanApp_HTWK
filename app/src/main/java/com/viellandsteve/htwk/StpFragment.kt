@@ -1,8 +1,6 @@
 package com.viellandsteve.htwk
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
@@ -10,13 +8,8 @@ import android.view.ViewGroup
 import android.widget.*
 import kotlinx.android.synthetic.main.fragment_stp.*
 import kotlinx.android.synthetic.main.fragment_stp.view.*
-import android.content.SharedPreferences
 import android.content.Context.MODE_PRIVATE
-import org.jsoup.Jsoup
-import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.concurrent.thread
-import kotlin.coroutines.cancellation.CancellationException
 
 
 class StpFragment : Fragment(R.layout.fragment_stp) {

@@ -1,7 +1,6 @@
 package com.viellandsteve.htwk
 
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,7 +10,6 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import kotlinx.android.synthetic.main.fragment_stp.*
 import org.jsoup.Jsoup
 import java.lang.Exception
 import java.util.*
