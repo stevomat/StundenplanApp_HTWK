@@ -2092,6 +2092,7 @@ id textView_raum
 id textView_sg
 id textView_uhrzeit
 id textView_veranstaltung
+id textView_version
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

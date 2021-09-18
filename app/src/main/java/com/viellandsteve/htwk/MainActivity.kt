@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), Communicator {
     val TAG = "MainActivity"
@@ -12,10 +13,14 @@ class MainActivity : AppCompatActivity(), Communicator {
     val stpFragment = StpFragment()
     val stp2Fragment = Stp2Fragment()
 
+    val version = "1.0.2"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        textView_version.text = version
 
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragment_stp, stpFragment)

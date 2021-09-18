@@ -15,7 +15,8 @@
         android:singleLine="false"
         android:scrollbars="vertical"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:maxLines="2"
+        android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/textView_art"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,6 +27,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="2dp"
         android:text="Uhrzeit"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_art"
         app:layout_constraintStart_toEndOf="@+id/textView_art"
         app:layout_constraintTop_toTopOf="@+id/textView_art"
@@ -49,6 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="Raum"
+        android:textSize="13sp"
         app:layout_constraintStart_toEndOf="@+id/textView_art"
         app:layout_constraintTop_toBottomOf="@+id/textView_uhrzeit" />
 
@@ -56,20 +59,19 @@
         android:id="@+id/textView_pw_row"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:text="pw"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
-        app:layout_constraintStart_toEndOf="@+id/textView_uhrzeit"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_veranstaltung" />
 
     <TextView
         android:id="@+id/textView_professor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="16dp"
         android:text="prof"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_raum"

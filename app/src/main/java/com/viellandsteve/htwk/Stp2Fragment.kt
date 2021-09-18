@@ -78,20 +78,26 @@ class Stp2Fragment : Fragment(R.layout.fragment_stp2) {
         text_sg.setText(SG)
 
         val calendar : Calendar = Calendar.getInstance(Locale.GERMAN)
-        calendar.set(Calendar.WEEK_OF_YEAR,PW.toInt())
-        calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)
 
-        val year1 = calendar.get(Calendar.YEAR)
-        val month1 = calendar.get(Calendar.MONTH) + 1
-        val day1 = calendar.get(Calendar.DAY_OF_MONTH)
+        if (!PW.equals("35-61") && !PW.equals("11-35")) {
+            calendar.set(Calendar.WEEK_OF_YEAR,PW.toInt())
+            calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)
 
-        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY)
+            val year1 = calendar.get(Calendar.YEAR)
+            val month1 = calendar.get(Calendar.MONTH) + 1
+            val day1 = calendar.get(Calendar.DAY_OF_MONTH)
 
-        val year2 = calendar.get(Calendar.YEAR)
-        val month2 = calendar.get(Calendar.MONTH) + 1
-        val day2 = calendar.get(Calendar.DAY_OF_MONTH)
+            calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY)
 
-        text_pw.setText("($day1.$month1.$year1 - $day2.$month2.$year2)")
+            val year2 = calendar.get(Calendar.YEAR)
+            val month2 = calendar.get(Calendar.MONTH) + 1
+            val day2 = calendar.get(Calendar.DAY_OF_MONTH)
+
+            text_pw.setText("($day1.$month1.$year1 - $day2.$month2.$year2)")
+        } else {
+            text_pw.setText(PW + ". Woche")
+        }
+
 
 
 
@@ -144,6 +150,7 @@ class Stp2Fragment : Fragment(R.layout.fragment_stp2) {
 
         thread{
             try {
+                exc_flag = 0
                 val doc = Jsoup.connect(URLstp).get()
 
                 val tableelements = doc.getElementsByClass("spreadsheet")
@@ -246,6 +253,7 @@ class Stp2Fragment : Fragment(R.layout.fragment_stp2) {
                 }
             } catch (e: Exception) {
                 exc_flag = 1
+                Log.i(TAG, "exeption: " + e)
             }
                 activity?.runOnUiThread {
 
