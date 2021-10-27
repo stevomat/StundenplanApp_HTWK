@@ -27,5 +27,7 @@ Wird eines der Veranstaltung angeklickt, wird eine Message mit den dazugehörige
 
 <img src="https://github.com/stevomat/StundenplanApp_HTWK/blob/main/pictures/start.PNG" width="300"> <img src="https://github.com/stevomat/StundenplanApp_HTWK/blob/main/pictures/abrufen.PNG" width="300"> <img src="https://github.com/stevomat/StundenplanApp_HTWK/blob/main/pictures/auswahl2.PNG" width="300"> <img src="https://github.com/stevomat/StundenplanApp_HTWK/blob/main/pictures/bemerkungen.PNG" width="300">
 
+## Changelog
+
 ## Bug-Report
 Die App kann eventuell Bugs oder Darstellungsfehler enthalten. Bitte diese einfach melden!
